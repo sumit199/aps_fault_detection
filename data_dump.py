@@ -22,6 +22,6 @@ if __name__=="__main__":
     #insert converted json data into mongodb
     client[Database_name][collection].insert_many(json_record)
     print(client)
-
+ 
 
 
