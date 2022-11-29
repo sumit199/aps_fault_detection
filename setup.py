@@ -1,9 +1,10 @@
+#we need this file to make our project installable or used as library. to distribute our project
 from setuptools import find_packages,setup
 
 from typing import List
 
 REQUIREMENT_FILE_NAME="requirements.txt"
-HYPHEN_E_DOT = "-e ."
+HYPHEN_E_DOT = "-e ."   # -e . to trigger the setup.py file it is in requirement.txt
 def get_requirements()->List[str]:
     
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
